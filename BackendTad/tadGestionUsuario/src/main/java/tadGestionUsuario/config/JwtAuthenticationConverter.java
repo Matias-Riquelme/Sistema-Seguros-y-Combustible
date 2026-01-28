@@ -17,18 +17,24 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+//Esta clase personaliza como se convierte el token JWT en un objeto Authentication de Spring Security. 
+// Su funcion principal es extraer los roles de los usuarios mediante tokens JWT
 
 @Component
 public class JwtAuthenticationConverter implements Converter<Jwt, AbstractAuthenticationToken> {
 
     private final JwtGrantedAuthoritiesConverter jwtGrantedAuthoritiesConverter = new JwtGrantedAuthoritiesConverter();
 
+    // Inyecta el valor del atributo principal(identificador del usuario)
+
     @Value("${jwt.auth.converter.principle-attribute}")
     private String principleAttribute;
 
+    // Inyecta el valor del atributo resource-id(ID del cliente en Keycloak
     @Value("${jwt.auth.converter.resource-id}")
     private String resourceId;
 
+    // Convierte el token JWT en un objeto Authentication de Spring Security
     @Override
     public AbstractAuthenticationToken convert(@NonNull Jwt jwt) {
         Collection<GrantedAuthority> authorities = Stream.concat(
@@ -38,6 +44,8 @@ public class JwtAuthenticationConverter implements Converter<Jwt, AbstractAuthen
         return new JwtAuthenticationToken(jwt, authorities, getPrincipleClaimName(jwt));
     }
 
+    // Obtiene el valor del atributo principal(identificador del usuario)
+
     private String getPrincipleClaimName(Jwt jwt) {
         String claimName = JwtClaimNames.SUB;
         if (principleAttribute != null) {
@@ -46,6 +54,7 @@ public class JwtAuthenticationConverter implements Converter<Jwt, AbstractAuthen
         return jwt.getClaim(claimName);
     }
 
+    // Extrae los roles del token JWT
     private Collection<? extends GrantedAuthority> extractResourceRoles(Jwt jwt) {
         Map<String, Object> resourceAccess = jwt.getClaim("resource_access");
         Map<String, Object> resource;
