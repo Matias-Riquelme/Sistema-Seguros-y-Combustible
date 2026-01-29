@@ -1,0 +1,52 @@
+package tadGestionUsuario.controller;
+
+import lombok.RequiredArgsConstructor;
+import org.keycloak.representations.idm.RoleRepresentation;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.*;
+import tadGestionUsuario.service.IKeycloakRoleService;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/keycloak/roles")
+@RequiredArgsConstructor
+@PreAuthorize("hasRole('admin_client_role')")
+public class KeycloakRoleController {
+
+    private final IKeycloakRoleService roleService;
+
+    @PreAuthorize("hasRole('admin_client_role')")
+    @PostMapping("/create")
+    public ResponseEntity<String> createRole(@RequestParam String roleName) {
+        roleService.createRole(roleName);
+        return ResponseEntity.ok("Role created successfully");
+    }
+
+    @PreAuthorize("hasRole('admin_client_role')")
+    @GetMapping("/list")
+    public ResponseEntity<List<RoleRepresentation>> findAllRoles() {
+        return ResponseEntity.ok(roleService.findAllRoles());
+    }
+
+    @PreAuthorize("hasRole('admin_client_role')")
+    @PostMapping("/assign/{username}/{roleName}")
+    public ResponseEntity<String> assignRole(@PathVariable String username, @PathVariable String roleName) {
+        roleService.assignRoleToUser(username, roleName);
+        return ResponseEntity.ok("Role assigned successfully");
+    }
+
+    @PreAuthorize("hasRole('admin_client_role')")
+    @DeleteMapping("/remove/{username}/{roleName}")
+    public ResponseEntity<String> removeRole(@PathVariable String username, @PathVariable String roleName) {
+        roleService.removeRoleFromUser(username, roleName);
+        return ResponseEntity.ok("Role removed successfully");
+    }
+
+    @PreAuthorize("hasRole('admin_client_role')")
+    @GetMapping("/user/{username}")
+    public ResponseEntity<List<RoleRepresentation>> getUserRoles(@PathVariable String username) {
+        return ResponseEntity.ok(roleService.getUserRoles(username));
+    }
+}
