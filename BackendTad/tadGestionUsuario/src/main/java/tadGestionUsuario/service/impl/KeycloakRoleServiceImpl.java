@@ -110,6 +110,16 @@ public class KeycloakRoleServiceImpl implements IKeycloakRoleService {
             throw new RuntimeException("User not found: " + username);
         }
         String userId = users.get(0).getId();
-        return realmResource.users().get(userId).roles().clientLevel(getClientUuid()).listAll();
+        UserResource userResource = realmResource.users().get(userId);
+
+        // Roles de cliente
+        List<RoleRepresentation> clientRoles = userResource.roles().clientLevel(getClientUuid()).listAll();
+
+        // Roles de realm
+        List<RoleRepresentation> realmRoles = userResource.roles().realmLevel().listAll();
+
+        // Combinar ambos
+        clientRoles.addAll(realmRoles);
+        return clientRoles;
     }
 }

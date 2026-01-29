@@ -18,4 +18,6 @@ public interface IKeycloakService {
     void deleteUser(String userId);
 
     void updateUser(String userId, UserDTO userDTO);
+
+    List<tadGestionUsuario.DTO.UserResponseDTO> findAllUsersWithRoles();
 }
