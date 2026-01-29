@@ -16,22 +16,35 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableMethodSecurity
 @RequiredArgsConstructor
 public class SecurityConfig {
+        // Configuración central de Spring Security: define rutas públicas, protegidas y
+        // validación JWT
 
-    private final JwtAuthenticationConverter jwtAuthenticationConverter;
+        private final JwtAuthenticationConverter jwtAuthenticationConverter;
 
-    @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http
-                .csrf(AbstractHttpConfigurer::disable)
-                .authorizeHttpRequests(auth -> auth
-                        .requestMatchers(HttpMethod.GET, "/hello-1", "/hello-2").permitAll()
-                        .anyRequest().authenticated())
-                .oauth2ResourceServer(oauth2 -> oauth2
-                        .jwt(jwt -> jwt
-                                .jwtAuthenticationConverter(jwtAuthenticationConverter)))
-                .sessionManagement(session -> session
-                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS));
+        // Es
 
-        return http.build();
-    }
+        @Bean
+        // Define la cadena de filtros de seguridad de la aplicación
+        public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+                http
+                                // Desactiva CSRF para APIs REST
+                                .csrf(AbstractHttpConfigurer::disable)
+
+                                // Define qué endpoints son públicos y cuáles requieren autenticación
+                                .authorizeHttpRequests(auth -> auth
+                                                .requestMatchers(HttpMethod.GET, "/hello-1", "/hello-2").permitAll()
+                                                .anyRequest().authenticated())
+
+                                // Configura el microservicio como Resource Server utilizando JWT
+                                .oauth2ResourceServer(oauth2 -> oauth2
+                                                .jwt(jwt -> jwt
+                                                                .jwtAuthenticationConverter(
+                                                                                jwtAuthenticationConverter)))
+
+                                // Evita la creación de sesiones (autenticación stateless)
+                                .sessionManagement(session -> session
+                                                .sessionCreationPolicy(SessionCreationPolicy.STATELESS));
+
+                return http.build();
+        }
 }

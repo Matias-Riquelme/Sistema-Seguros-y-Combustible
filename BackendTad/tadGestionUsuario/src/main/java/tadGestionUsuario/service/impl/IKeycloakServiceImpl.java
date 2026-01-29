@@ -12,16 +12,43 @@ import org.keycloak.representations.idm.CredentialRepresentation;
 import org.keycloak.representations.idm.RoleRepresentation;
 import org.keycloak.representations.idm.UserRepresentation;
 import org.springframework.lang.NonNull;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import tadGestionUsuario.DTO.UserResponseDTO;
+import org.keycloak.admin.client.Keycloak;
+import org.keycloak.representations.idm.ClientRepresentation;
 
 import jakarta.ws.rs.core.Response;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 @Service
 @Slf4j
 public class IKeycloakServiceImpl implements IKeycloakService {
+
+    private final Keycloak keycloak;
+
+    @Value("${keycloak.realm}")
+    private String realm;
+
+    @Value("${keycloak.client-id}")
+    private String clientId;
+
+    public IKeycloakServiceImpl(Keycloak keycloak) {
+        this.keycloak = keycloak;
+    }
+
+    private String getClientUuid() {
+        RealmResource realmResource = keycloak.realm(realm);
+        List<ClientRepresentation> clientRepresentations = realmResource.clients().findByClientId(clientId);
+        if (clientRepresentations.isEmpty()) {
+            throw new RuntimeException("Client not found: " + clientId);
+        }
+        return clientRepresentations.get(0).getId();
+    }
 
     /**
      * Metodo para listar todos los usuarios de Keycloak
@@ -29,7 +56,7 @@ public class IKeycloakServiceImpl implements IKeycloakService {
      * @return List<UserRepresentation>
      */
     public List<UserRepresentation> findAllUsers() {
-        return KeycloakProvider.getRealmResource()
+        return keycloak.realm(realm)
                 .users()
                 .list();
     }
@@ -40,7 +67,7 @@ public class IKeycloakServiceImpl implements IKeycloakService {
      * @return List<UserRepresentation>
      */
     public List<UserRepresentation> searchUserByUsername(String username) {
-        return KeycloakProvider.getRealmResource()
+        return keycloak.realm(realm)
                 .users()
                 .searchByUsername(username, true);
     }
@@ -53,7 +80,7 @@ public class IKeycloakServiceImpl implements IKeycloakService {
     public String createUser(@NonNull UserDTO userDTO) {
 
         int status = 0;
-        UsersResource usersResource = KeycloakProvider.getUserResource();
+        UsersResource usersResource = keycloak.realm(realm).users();
 
         UserRepresentation userRepresentation = new UserRepresentation();
         userRepresentation.setFirstName(userDTO.getFirstName());
@@ -78,23 +105,25 @@ public class IKeycloakServiceImpl implements IKeycloakService {
 
             usersResource.get(userId).resetPassword(credentialRepresentation);
 
-            RealmResource realmResource = KeycloakProvider.getRealmResource();
-
-            List<RoleRepresentation> rolesRepresentation = null;
+            RealmResource realmResource = keycloak.realm(realm);
+            String clientUuid = getClientUuid();
 
             if (userDTO.getRoles() == null || userDTO.getRoles().isEmpty()) {
-                rolesRepresentation = List.of(realmResource.roles().get("user").toRepresentation());
+                // Si no trae roles, asignamos "user_client_role" (Client Role) por defecto
+                RoleRepresentation defaultRole = realmResource.clients().get(clientUuid)
+                        .roles().get("user_client_role").toRepresentation();
+                realmResource.users().get(userId).roles().clientLevel(clientUuid)
+                        .add(Collections.singletonList(defaultRole));
             } else {
-                rolesRepresentation = realmResource.roles()
-                        .list()
+                // Si trae roles, buscamos y asignamos cada uno al nivel de cliente
+                List<RoleRepresentation> rolesToAssign = realmResource.clients().get(clientUuid).roles().list()
                         .stream()
-                        .filter(role -> userDTO.getRoles()
-                                .stream()
+                        .filter(role -> userDTO.getRoles().stream()
                                 .anyMatch(roleName -> roleName.equalsIgnoreCase(role.getName())))
                         .toList();
-            }
 
-            realmResource.users().get(userId).roles().realmLevel().add(rolesRepresentation);
+                realmResource.users().get(userId).roles().clientLevel(clientUuid).add(rolesToAssign);
+            }
 
             return "User created successfully!!";
 
@@ -113,7 +142,8 @@ public class IKeycloakServiceImpl implements IKeycloakService {
      * @return void
      */
     public void deleteUser(String userId) {
-        KeycloakProvider.getUserResource()
+        keycloak.realm(realm)
+                .users()
                 .get(userId)
                 .remove();
     }
@@ -139,7 +169,51 @@ public class IKeycloakServiceImpl implements IKeycloakService {
         user.setEmailVerified(true);
         user.setCredentials(Collections.singletonList(credentialRepresentation));
 
-        UserResource usersResource = KeycloakProvider.getUserResource().get(userId);
+        UserResource usersResource = keycloak.realm(realm).users().get(userId);
         usersResource.update(user);
+    }
+
+    @Override
+    public List<UserResponseDTO> findAllUsersWithRoles() {
+        List<UserRepresentation> users = findAllUsers();
+        String clientUuid = getClientUuid();
+
+        return users.stream().map(user -> {
+            UserResource userResource = keycloak.realm(realm).users().get(user.getId());
+
+            // Obtener roles de cliente
+            List<String> clientRoles = userResource.roles().clientLevel(clientUuid).listAll()
+                    .stream()
+                    .map(RoleRepresentation::getName)
+                    .collect(Collectors.toList());
+
+            // Obtener roles de realm
+            List<String> realmRoles = userResource.roles().realmLevel().listAll()
+                    .stream()
+                    .map(RoleRepresentation::getName)
+                    .collect(Collectors.toList());
+
+            // Combinar ambos y filtrar roles internos de Keycloak si se desea un listado
+            // limpio
+            List<String> allRoles = Stream.concat(clientRoles.stream(), realmRoles.stream())
+                    .distinct()
+                    .filter(role -> !role.startsWith("default-roles-")
+                            && !role.equals("offline_access")
+                            && !role.equals("uma_authorization"))
+                    .collect(Collectors.toList());
+
+            // Si la lista queda vacía (solo tenía roles internos), podrías forzar que se
+            // vea "user_client_role"
+            // pero lo ideal es que el usuario ya lo tenga asignado físicamente.
+
+            return UserResponseDTO.builder()
+                    .id(user.getId())
+                    .username(user.getUsername())
+                    .email(user.getEmail())
+                    .firstName(user.getFirstName())
+                    .lastName(user.getLastName())
+                    .roles(allRoles)
+                    .build();
+        }).collect(Collectors.toList());
     }
 }
