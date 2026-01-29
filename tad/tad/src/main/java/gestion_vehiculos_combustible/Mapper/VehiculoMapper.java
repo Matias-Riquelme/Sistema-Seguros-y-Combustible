@@ -1,0 +1,41 @@
+package gestion_vehiculos_combustible.Mapper;
+
+import gestion_vehiculos_combustible.Dto.VehiculoDTO;
+import gestion_vehiculos_combustible.Model.Vehiculo;
+import org.springframework.stereotype.Component;
+
+@Component
+public class VehiculoMapper {
+
+    public VehiculoDTO toDTO(Vehiculo vehiculo) {
+        if (vehiculo == null)
+            return null;
+
+        VehiculoDTO dto = new VehiculoDTO();
+        dto.setId(vehiculo.getId());
+        dto.setPatente(vehiculo.getPatente());
+        dto.setMarca(vehiculo.getMarca());
+        dto.setModelo(vehiculo.getModelo());
+        dto.setTipo(vehiculo.getTipo());
+        dto.setRampla(vehiculo.getRampla());
+        dto.setAnio(vehiculo.getAnio());
+        dto.setAnioRegistro(vehiculo.getAnioRegistro());
+        return dto;
+    }
+
+    public Vehiculo toEntity(VehiculoDTO dto) {
+        if (dto == null)
+            return null;
+
+        Vehiculo entity = new Vehiculo();
+        entity.setId(dto.getId());
+        entity.setPatente(dto.getPatente());
+        entity.setMarca(dto.getMarca());
+        entity.setModelo(dto.getModelo());
+        entity.setTipo(dto.getTipo());
+        entity.setRampla(dto.getRampla());
+        entity.setAnio(dto.getAnio());
+        entity.setAnioRegistro(dto.getAnioRegistro());
+        return entity;
+    }
+}
