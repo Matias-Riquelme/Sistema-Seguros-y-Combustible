@@ -17,6 +17,6 @@ import lombok.NoArgsConstructor;
 public class Base {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long id_base;
     private String nombre;
 }

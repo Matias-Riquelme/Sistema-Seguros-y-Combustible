@@ -1,0 +1,633 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< gestion_vehiculos_combustible:tad >------------------
+[INFO] Building tad 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ tad ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ tad ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 40 source files with javac [debug parameters release 21] to target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/OdometroController.java:[20,43] cannot access gestion_vehiculos_combustible.model.Odometro
+  bad source file: C:\Users\rique\Desktop\sistemaCombustible\Sistema-Seguros-y-Combustible\tad\tad\src\main\java\gestion_vehiculos_combustible\model\Odometro.java
+    file does not contain class gestion_vehiculos_combustible.model.Odometro
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipoRegOdoController.java:[20,43] cannot access gestion_vehiculos_combustible.model.TipoRegOdo
+  bad source file: C:\Users\rique\Desktop\sistemaCombustible\Sistema-Seguros-y-Combustible\tad\tad\src\main\java\gestion_vehiculos_combustible\model\TipoRegOdo.java
+    file does not contain class gestion_vehiculos_combustible.model.TipoRegOdo
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[18,41] cannot access gestion_vehiculos_combustible.dto.TipovehiculoDTO
+  bad source file: C:\Users\rique\Desktop\sistemaCombustible\Sistema-Seguros-y-Combustible\tad\tad\src\main\java\gestion_vehiculos_combustible\dto\TipovehiculoDTO.java
+    file does not contain class gestion_vehiculos_combustible.dto.TipovehiculoDTO
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[19,44] cannot access gestion_vehiculos_combustible.mapper.TipovehiculoMapper
+  bad source file: C:\Users\rique\Desktop\sistemaCombustible\Sistema-Seguros-y-Combustible\tad\tad\src\main\java\gestion_vehiculos_combustible\mapper\TipovehiculoMapper.java
+    file does not contain class gestion_vehiculos_combustible.mapper.TipovehiculoMapper
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[20,43] cannot access gestion_vehiculos_combustible.model.Tipovehiculo
+  bad source file: C:\Users\rique\Desktop\sistemaCombustible\Sistema-Seguros-y-Combustible\tad\tad\src\main\java\gestion_vehiculos_combustible\model\Tipovehiculo.java
+    file does not contain class gestion_vehiculos_combustible.model.Tipovehiculo
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/TipovehiculoService.java:[10,48] cannot access gestion_vehiculos_combustible.repository.TipovehiculoRepository
+  bad source file: C:\Users\rique\Desktop\sistemaCombustible\Sistema-Seguros-y-Combustible\tad\tad\src\main\java\gestion_vehiculos_combustible\repository\TipovehiculoRepository.java
+    file does not contain class gestion_vehiculos_combustible.repository.TipovehiculoRepository
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/OdometroMapper.java:[10,30] cannot find symbol
+  symbol:   class Odometro
+  location: class gestion_vehiculos_combustible.mapper.OdometroMapper
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/OdometroMapper.java:[21,12] cannot find symbol
+  symbol:   class Odometro
+  location: class gestion_vehiculos_combustible.mapper.OdometroMapper
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/repository/OdometroRepository.java:[8,59] cannot find symbol
+  symbol: class Odometro
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/OdometroService.java:[17,37] cannot find symbol
+  symbol:   class Odometro
+  location: class gestion_vehiculos_combustible.service.OdometroService
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/OdometroService.java:[17,12] cannot find symbol
+  symbol:   class Odometro
+  location: class gestion_vehiculos_combustible.service.OdometroService
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/OdometroService.java:[21,17] cannot find symbol
+  symbol:   class Odometro
+  location: class gestion_vehiculos_combustible.service.OdometroService
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/OdometroService.java:[25,21] cannot find symbol
+  symbol:   class Odometro
+  location: class gestion_vehiculos_combustible.service.OdometroService
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/TipoRegOdoMapper.java:[10,32] cannot find symbol
+  symbol:   class TipoRegOdo
+  location: class gestion_vehiculos_combustible.mapper.TipoRegOdoMapper
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/TipoRegOdoMapper.java:[19,12] cannot find symbol
+  symbol:   class TipoRegOdo
+  location: class gestion_vehiculos_combustible.mapper.TipoRegOdoMapper
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/repository/TipoRegOdoRepository.java:[8,61] cannot find symbol
+  symbol: class TipoRegOdo
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/TipoRegOdoService.java:[17,41] cannot find symbol
+  symbol:   class TipoRegOdo
+  location: class gestion_vehiculos_combustible.service.TipoRegOdoService
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/TipoRegOdoService.java:[17,12] cannot find symbol
+  symbol:   class TipoRegOdo
+  location: class gestion_vehiculos_combustible.service.TipoRegOdoService
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/TipoRegOdoService.java:[21,17] cannot find symbol
+  symbol:   class TipoRegOdo
+  location: class gestion_vehiculos_combustible.service.TipoRegOdoService
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/TipoRegOdoService.java:[25,21] cannot find symbol
+  symbol:   class TipoRegOdo
+  location: class gestion_vehiculos_combustible.service.TipoRegOdoService
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[31,13] cannot find symbol
+  symbol:   class TipovehiculoMapper
+  location: class gestion_vehiculos_combustible.controller.TipovehiculoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[40,84] cannot find symbol
+  symbol:   class TipovehiculoDTO
+  location: class gestion_vehiculos_combustible.controller.TipovehiculoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[40,27] cannot find symbol
+  symbol:   class TipovehiculoDTO
+  location: class gestion_vehiculos_combustible.controller.TipovehiculoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[53,17] cannot find symbol
+  symbol:   class TipovehiculoDTO
+  location: class gestion_vehiculos_combustible.controller.TipovehiculoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[66,27] cannot find symbol
+  symbol:   class TipovehiculoDTO
+  location: class gestion_vehiculos_combustible.controller.TipovehiculoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[93,35] cannot find symbol
+  symbol:   class TipovehiculoDTO
+  location: class gestion_vehiculos_combustible.controller.TipovehiculoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[92,27] cannot find symbol
+  symbol:   class TipovehiculoDTO
+  location: class gestion_vehiculos_combustible.controller.TipovehiculoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/TipovehiculoService.java:[16,13] cannot find symbol
+  symbol:   class TipovehiculoRepository
+  location: class gestion_vehiculos_combustible.service.TipovehiculoService
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/TipovehiculoService.java:[18,45] cannot find symbol
+  symbol:   class Tipovehiculo
+  location: class gestion_vehiculos_combustible.service.TipovehiculoService
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/TipovehiculoService.java:[18,12] cannot find symbol
+  symbol:   class Tipovehiculo
+  location: class gestion_vehiculos_combustible.service.TipovehiculoService
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/TipovehiculoService.java:[22,17] cannot find symbol
+  symbol:   class Tipovehiculo
+  location: class gestion_vehiculos_combustible.service.TipovehiculoService
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/TipovehiculoService.java:[26,21] cannot find symbol
+  symbol:   class Tipovehiculo
+  location: class gestion_vehiculos_combustible.service.TipovehiculoService
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/BaseController.java:[97,46] cannot find symbol
+  symbol:   method getNombre()
+  location: variable baseDTO of type gestion_vehiculos_combustible.dto.BaseDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/BaseMapper.java:[14,28] cannot find symbol
+  symbol:   method getId_base()
+  location: variable base of type gestion_vehiculos_combustible.model.Base
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/BaseMapper.java:[15,27] cannot find symbol
+  symbol:   method getNombre()
+  location: variable base of type gestion_vehiculos_combustible.model.Base
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/BaseMapper.java:[23,30] cannot find symbol
+  symbol:   method getId_base()
+  location: variable dto of type gestion_vehiculos_combustible.dto.BaseDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/BaseMapper.java:[24,29] cannot find symbol
+  symbol:   method getNombre()
+  location: variable dto of type gestion_vehiculos_combustible.dto.BaseDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/OdometroController.java:[41,9] cannot find symbol
+  symbol:   class Odometro
+  location: class gestion_vehiculos_combustible.controller.OdometroController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/OdometroController.java:[56,25] incompatible types: inference variable T has incompatible bounds
+    equality constraints: gestion_vehiculos_combustible.dto.OdometroDTO
+    lower bounds: java.lang.Object
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/OdometroController.java:[67,18] cannot find symbol
+  symbol:   class Odometro
+  location: class gestion_vehiculos_combustible.controller.OdometroController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/OdometroController.java:[69,27] incompatible types: java.lang.Object cannot be converted to org.springframework.http.ResponseEntity<gestion_vehiculos_combustible.dto.OdometroDTO>
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/OdometroController.java:[94,18] cannot find symbol
+  symbol:   class Odometro
+  location: class gestion_vehiculos_combustible.controller.OdometroController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/OdometroController.java:[96,13] cannot find symbol
+  symbol:   class Odometro
+  location: class gestion_vehiculos_combustible.controller.OdometroController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/OdometroController.java:[97,57] cannot find symbol
+  symbol:   method getOdoActual()
+  location: variable odometroDTO of type gestion_vehiculos_combustible.dto.OdometroDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/OdometroController.java:[98,58] cannot find symbol
+  symbol:   method getF_toma_odo()
+  location: variable odometroDTO of type gestion_vehiculos_combustible.dto.OdometroDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/OdometroController.java:[99,57] cannot find symbol
+  symbol:   method getR_reg_odo()
+  location: variable odometroDTO of type gestion_vehiculos_combustible.dto.OdometroDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/OdometroMapper.java:[24,9] cannot find symbol
+  symbol:   class Odometro
+  location: class gestion_vehiculos_combustible.mapper.OdometroMapper
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/OdometroMapper.java:[24,31] cannot find symbol
+  symbol:   class Odometro
+  location: class gestion_vehiculos_combustible.mapper.OdometroMapper
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/OdometroMapper.java:[25,29] cannot find symbol
+  symbol:   method getId_odo()
+  location: variable dto of type gestion_vehiculos_combustible.dto.OdometroDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/OdometroMapper.java:[26,32] cannot find symbol
+  symbol:   method getOdoActual()
+  location: variable dto of type gestion_vehiculos_combustible.dto.OdometroDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/OdometroMapper.java:[27,33] cannot find symbol
+  symbol:   method getF_toma_odo()
+  location: variable dto of type gestion_vehiculos_combustible.dto.OdometroDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/OdometroMapper.java:[28,32] cannot find symbol
+  symbol:   method getR_reg_odo()
+  location: variable dto of type gestion_vehiculos_combustible.dto.OdometroDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/OperacionesController.java:[97,60] cannot find symbol
+  symbol:   method getNombre()
+  location: variable operacionesDTO of type gestion_vehiculos_combustible.dto.OperacionesDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/OperacionesMapper.java:[14,40] cannot find symbol
+  symbol:   method getId_operacion()
+  location: variable operaciones of type gestion_vehiculos_combustible.model.Operaciones
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/OperacionesMapper.java:[15,34] cannot find symbol
+  symbol:   method getNombre()
+  location: variable operaciones of type gestion_vehiculos_combustible.model.Operaciones
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/OperacionesMapper.java:[23,35] cannot find symbol
+  symbol:   method getId_operacion()
+  location: variable dto of type gestion_vehiculos_combustible.dto.OperacionesDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/OperacionesMapper.java:[24,29] cannot find symbol
+  symbol:   method getNombre()
+  location: variable dto of type gestion_vehiculos_combustible.dto.OperacionesDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipoRegOdoController.java:[41,9] cannot find symbol
+  symbol:   class TipoRegOdo
+  location: class gestion_vehiculos_combustible.controller.TipoRegOdoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipoRegOdoController.java:[56,25] incompatible types: inference variable T has incompatible bounds
+    equality constraints: gestion_vehiculos_combustible.dto.TipoRegOdoDTO
+    lower bounds: java.lang.Object
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipoRegOdoController.java:[67,18] cannot find symbol
+  symbol:   class TipoRegOdo
+  location: class gestion_vehiculos_combustible.controller.TipoRegOdoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipoRegOdoController.java:[69,27] incompatible types: java.lang.Object cannot be converted to org.springframework.http.ResponseEntity<gestion_vehiculos_combustible.dto.TipoRegOdoDTO>
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipoRegOdoController.java:[94,18] cannot find symbol
+  symbol:   class TipoRegOdo
+  location: class gestion_vehiculos_combustible.controller.TipoRegOdoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipoRegOdoController.java:[96,13] cannot find symbol
+  symbol:   class TipoRegOdo
+  location: class gestion_vehiculos_combustible.controller.TipoRegOdoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipoRegOdoController.java:[97,64] cannot find symbol
+  symbol:   method getTipo_reg_odo()
+  location: variable tipoRegOdoDTO of type gestion_vehiculos_combustible.dto.TipoRegOdoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/TipoRegOdoMapper.java:[22,9] cannot find symbol
+  symbol:   class TipoRegOdo
+  location: class gestion_vehiculos_combustible.mapper.TipoRegOdoMapper
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/TipoRegOdoMapper.java:[22,33] cannot find symbol
+  symbol:   class TipoRegOdo
+  location: class gestion_vehiculos_combustible.mapper.TipoRegOdoMapper
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/TipoRegOdoMapper.java:[23,38] cannot find symbol
+  symbol:   method getId_tipo_reg_odo()
+  location: variable dto of type gestion_vehiculos_combustible.dto.TipoRegOdoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/TipoRegOdoMapper.java:[24,35] cannot find symbol
+  symbol:   method getTipo_reg_odo()
+  location: variable dto of type gestion_vehiculos_combustible.dto.TipoRegOdoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[41,9] cannot find symbol
+  symbol:   class Tipovehiculo
+  location: class gestion_vehiculos_combustible.controller.TipovehiculoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[67,18] cannot find symbol
+  symbol:   class Tipovehiculo
+  location: class gestion_vehiculos_combustible.controller.TipovehiculoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[94,18] cannot find symbol
+  symbol:   class Tipovehiculo
+  location: class gestion_vehiculos_combustible.controller.TipovehiculoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[96,13] cannot find symbol
+  symbol:   class Tipovehiculo
+  location: class gestion_vehiculos_combustible.controller.TipovehiculoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/VehiculoController.java:[101,53] cannot find symbol
+  symbol:   method getMarca()
+  location: variable vehiculoDTO of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/VehiculoController.java:[102,54] cannot find symbol
+  symbol:   method getModelo()
+  location: variable vehiculoDTO of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/VehiculoController.java:[103,52] cannot find symbol
+  symbol:   method getTipo()
+  location: variable vehiculoDTO of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/VehiculoController.java:[104,54] cannot find symbol
+  symbol:   method getRampla()
+  location: variable vehiculoDTO of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/VehiculoController.java:[105,52] cannot find symbol
+  symbol:   method getAnio()
+  location: variable vehiculoDTO of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/VehiculoController.java:[106,60] cannot find symbol
+  symbol:   method getAnioRegistro()
+  location: variable vehiculoDTO of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/VehiculoController.java:[107,61] cannot find symbol
+  symbol:   method getNum_motor_veh()
+  location: variable vehiculoDTO of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/VehiculoController.java:[108,62] cannot find symbol
+  symbol:   method getNum_chasis_veh()
+  location: variable vehiculoDTO of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[15,36] cannot find symbol
+  symbol:   method getId_vehiculo()
+  location: variable vehiculo of type gestion_vehiculos_combustible.model.Vehiculo
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[16,32] cannot find symbol
+  symbol:   method getPatente()
+  location: variable vehiculo of type gestion_vehiculos_combustible.model.Vehiculo
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[17,30] cannot find symbol
+  symbol:   method getMarca()
+  location: variable vehiculo of type gestion_vehiculos_combustible.model.Vehiculo
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[18,31] cannot find symbol
+  symbol:   method getModelo()
+  location: variable vehiculo of type gestion_vehiculos_combustible.model.Vehiculo
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[19,29] cannot find symbol
+  symbol:   method getTipo()
+  location: variable vehiculo of type gestion_vehiculos_combustible.model.Vehiculo
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[20,31] cannot find symbol
+  symbol:   method getRampla()
+  location: variable vehiculo of type gestion_vehiculos_combustible.model.Vehiculo
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[21,29] cannot find symbol
+  symbol:   method getAnio()
+  location: variable vehiculo of type gestion_vehiculos_combustible.model.Vehiculo
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[22,37] cannot find symbol
+  symbol:   method getAnioRegistro()
+  location: variable vehiculo of type gestion_vehiculos_combustible.model.Vehiculo
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[23,38] cannot find symbol
+  symbol:   method getNum_motor_veh()
+  location: variable vehiculo of type gestion_vehiculos_combustible.model.Vehiculo
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[24,39] cannot find symbol
+  symbol:   method getNum_chasis_veh()
+  location: variable vehiculo of type gestion_vehiculos_combustible.model.Vehiculo
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[33,34] cannot find symbol
+  symbol:   method getId_vehiculo()
+  location: variable dto of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[34,30] cannot find symbol
+  symbol:   method getPatente()
+  location: variable dto of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[35,28] cannot find symbol
+  symbol:   method getMarca()
+  location: variable dto of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[36,29] cannot find symbol
+  symbol:   method getModelo()
+  location: variable dto of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[37,27] cannot find symbol
+  symbol:   method getTipo()
+  location: variable dto of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[38,29] cannot find symbol
+  symbol:   method getRampla()
+  location: variable dto of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[39,27] cannot find symbol
+  symbol:   method getAnio()
+  location: variable dto of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[40,35] cannot find symbol
+  symbol:   method getAnioRegistro()
+  location: variable dto of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[41,36] cannot find symbol
+  symbol:   method getNum_motor_veh()
+  location: variable dto of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[42,37] cannot find symbol
+  symbol:   method getNum_chasis_veh()
+  location: variable dto of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.116 s
+[INFO] Finished at: 2026-01-30T16:52:09-03:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.14.1:compile (default-compile) on project tad: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/OdometroController.java:[20,43] cannot access gestion_vehiculos_combustible.model.Odometro
+[ERROR]   bad source file: C:\Users\rique\Desktop\sistemaCombustible\Sistema-Seguros-y-Combustible\tad\tad\src\main\java\gestion_vehiculos_combustible\model\Odometro.java
+[ERROR]     file does not contain class gestion_vehiculos_combustible.model.Odometro
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipoRegOdoController.java:[20,43] cannot access gestion_vehiculos_combustible.model.TipoRegOdo
+[ERROR]   bad source file: C:\Users\rique\Desktop\sistemaCombustible\Sistema-Seguros-y-Combustible\tad\tad\src\main\java\gestion_vehiculos_combustible\model\TipoRegOdo.java
+[ERROR]     file does not contain class gestion_vehiculos_combustible.model.TipoRegOdo
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[18,41] cannot access gestion_vehiculos_combustible.dto.TipovehiculoDTO
+[ERROR]   bad source file: C:\Users\rique\Desktop\sistemaCombustible\Sistema-Seguros-y-Combustible\tad\tad\src\main\java\gestion_vehiculos_combustible\dto\TipovehiculoDTO.java
+[ERROR]     file does not contain class gestion_vehiculos_combustible.dto.TipovehiculoDTO
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[19,44] cannot access gestion_vehiculos_combustible.mapper.TipovehiculoMapper
+[ERROR]   bad source file: C:\Users\rique\Desktop\sistemaCombustible\Sistema-Seguros-y-Combustible\tad\tad\src\main\java\gestion_vehiculos_combustible\mapper\TipovehiculoMapper.java
+[ERROR]     file does not contain class gestion_vehiculos_combustible.mapper.TipovehiculoMapper
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[20,43] cannot access gestion_vehiculos_combustible.model.Tipovehiculo
+[ERROR]   bad source file: C:\Users\rique\Desktop\sistemaCombustible\Sistema-Seguros-y-Combustible\tad\tad\src\main\java\gestion_vehiculos_combustible\model\Tipovehiculo.java
+[ERROR]     file does not contain class gestion_vehiculos_combustible.model.Tipovehiculo
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/TipovehiculoService.java:[10,48] cannot access gestion_vehiculos_combustible.repository.TipovehiculoRepository
+[ERROR]   bad source file: C:\Users\rique\Desktop\sistemaCombustible\Sistema-Seguros-y-Combustible\tad\tad\src\main\java\gestion_vehiculos_combustible\repository\TipovehiculoRepository.java
+[ERROR]     file does not contain class gestion_vehiculos_combustible.repository.TipovehiculoRepository
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/OdometroMapper.java:[10,30] cannot find symbol
+[ERROR]   symbol:   class Odometro
+[ERROR]   location: class gestion_vehiculos_combustible.mapper.OdometroMapper
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/OdometroMapper.java:[21,12] cannot find symbol
+[ERROR]   symbol:   class Odometro
+[ERROR]   location: class gestion_vehiculos_combustible.mapper.OdometroMapper
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/repository/OdometroRepository.java:[8,59] cannot find symbol
+[ERROR]   symbol: class Odometro
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/OdometroService.java:[17,37] cannot find symbol
+[ERROR]   symbol:   class Odometro
+[ERROR]   location: class gestion_vehiculos_combustible.service.OdometroService
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/OdometroService.java:[17,12] cannot find symbol
+[ERROR]   symbol:   class Odometro
+[ERROR]   location: class gestion_vehiculos_combustible.service.OdometroService
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/OdometroService.java:[21,17] cannot find symbol
+[ERROR]   symbol:   class Odometro
+[ERROR]   location: class gestion_vehiculos_combustible.service.OdometroService
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/OdometroService.java:[25,21] cannot find symbol
+[ERROR]   symbol:   class Odometro
+[ERROR]   location: class gestion_vehiculos_combustible.service.OdometroService
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/TipoRegOdoMapper.java:[10,32] cannot find symbol
+[ERROR]   symbol:   class TipoRegOdo
+[ERROR]   location: class gestion_vehiculos_combustible.mapper.TipoRegOdoMapper
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/TipoRegOdoMapper.java:[19,12] cannot find symbol
+[ERROR]   symbol:   class TipoRegOdo
+[ERROR]   location: class gestion_vehiculos_combustible.mapper.TipoRegOdoMapper
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/repository/TipoRegOdoRepository.java:[8,61] cannot find symbol
+[ERROR]   symbol: class TipoRegOdo
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/TipoRegOdoService.java:[17,41] cannot find symbol
+[ERROR]   symbol:   class TipoRegOdo
+[ERROR]   location: class gestion_vehiculos_combustible.service.TipoRegOdoService
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/TipoRegOdoService.java:[17,12] cannot find symbol
+[ERROR]   symbol:   class TipoRegOdo
+[ERROR]   location: class gestion_vehiculos_combustible.service.TipoRegOdoService
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/TipoRegOdoService.java:[21,17] cannot find symbol
+[ERROR]   symbol:   class TipoRegOdo
+[ERROR]   location: class gestion_vehiculos_combustible.service.TipoRegOdoService
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/TipoRegOdoService.java:[25,21] cannot find symbol
+[ERROR]   symbol:   class TipoRegOdo
+[ERROR]   location: class gestion_vehiculos_combustible.service.TipoRegOdoService
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[31,13] cannot find symbol
+[ERROR]   symbol:   class TipovehiculoMapper
+[ERROR]   location: class gestion_vehiculos_combustible.controller.TipovehiculoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[40,84] cannot find symbol
+[ERROR]   symbol:   class TipovehiculoDTO
+[ERROR]   location: class gestion_vehiculos_combustible.controller.TipovehiculoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[40,27] cannot find symbol
+[ERROR]   symbol:   class TipovehiculoDTO
+[ERROR]   location: class gestion_vehiculos_combustible.controller.TipovehiculoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[53,17] cannot find symbol
+[ERROR]   symbol:   class TipovehiculoDTO
+[ERROR]   location: class gestion_vehiculos_combustible.controller.TipovehiculoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[66,27] cannot find symbol
+[ERROR]   symbol:   class TipovehiculoDTO
+[ERROR]   location: class gestion_vehiculos_combustible.controller.TipovehiculoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[93,35] cannot find symbol
+[ERROR]   symbol:   class TipovehiculoDTO
+[ERROR]   location: class gestion_vehiculos_combustible.controller.TipovehiculoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[92,27] cannot find symbol
+[ERROR]   symbol:   class TipovehiculoDTO
+[ERROR]   location: class gestion_vehiculos_combustible.controller.TipovehiculoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/TipovehiculoService.java:[16,13] cannot find symbol
+[ERROR]   symbol:   class TipovehiculoRepository
+[ERROR]   location: class gestion_vehiculos_combustible.service.TipovehiculoService
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/TipovehiculoService.java:[18,45] cannot find symbol
+[ERROR]   symbol:   class Tipovehiculo
+[ERROR]   location: class gestion_vehiculos_combustible.service.TipovehiculoService
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/TipovehiculoService.java:[18,12] cannot find symbol
+[ERROR]   symbol:   class Tipovehiculo
+[ERROR]   location: class gestion_vehiculos_combustible.service.TipovehiculoService
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/TipovehiculoService.java:[22,17] cannot find symbol
+[ERROR]   symbol:   class Tipovehiculo
+[ERROR]   location: class gestion_vehiculos_combustible.service.TipovehiculoService
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/service/TipovehiculoService.java:[26,21] cannot find symbol
+[ERROR]   symbol:   class Tipovehiculo
+[ERROR]   location: class gestion_vehiculos_combustible.service.TipovehiculoService
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/BaseController.java:[97,46] cannot find symbol
+[ERROR]   symbol:   method getNombre()
+[ERROR]   location: variable baseDTO of type gestion_vehiculos_combustible.dto.BaseDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/BaseMapper.java:[14,28] cannot find symbol
+[ERROR]   symbol:   method getId_base()
+[ERROR]   location: variable base of type gestion_vehiculos_combustible.model.Base
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/BaseMapper.java:[15,27] cannot find symbol
+[ERROR]   symbol:   method getNombre()
+[ERROR]   location: variable base of type gestion_vehiculos_combustible.model.Base
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/BaseMapper.java:[23,30] cannot find symbol
+[ERROR]   symbol:   method getId_base()
+[ERROR]   location: variable dto of type gestion_vehiculos_combustible.dto.BaseDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/BaseMapper.java:[24,29] cannot find symbol
+[ERROR]   symbol:   method getNombre()
+[ERROR]   location: variable dto of type gestion_vehiculos_combustible.dto.BaseDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/OdometroController.java:[41,9] cannot find symbol
+[ERROR]   symbol:   class Odometro
+[ERROR]   location: class gestion_vehiculos_combustible.controller.OdometroController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/OdometroController.java:[56,25] incompatible types: inference variable T has incompatible bounds
+[ERROR]     equality constraints: gestion_vehiculos_combustible.dto.OdometroDTO
+[ERROR]     lower bounds: java.lang.Object
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/OdometroController.java:[67,18] cannot find symbol
+[ERROR]   symbol:   class Odometro
+[ERROR]   location: class gestion_vehiculos_combustible.controller.OdometroController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/OdometroController.java:[69,27] incompatible types: java.lang.Object cannot be converted to org.springframework.http.ResponseEntity<gestion_vehiculos_combustible.dto.OdometroDTO>
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/OdometroController.java:[94,18] cannot find symbol
+[ERROR]   symbol:   class Odometro
+[ERROR]   location: class gestion_vehiculos_combustible.controller.OdometroController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/OdometroController.java:[96,13] cannot find symbol
+[ERROR]   symbol:   class Odometro
+[ERROR]   location: class gestion_vehiculos_combustible.controller.OdometroController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/OdometroController.java:[97,57] cannot find symbol
+[ERROR]   symbol:   method getOdoActual()
+[ERROR]   location: variable odometroDTO of type gestion_vehiculos_combustible.dto.OdometroDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/OdometroController.java:[98,58] cannot find symbol
+[ERROR]   symbol:   method getF_toma_odo()
+[ERROR]   location: variable odometroDTO of type gestion_vehiculos_combustible.dto.OdometroDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/OdometroController.java:[99,57] cannot find symbol
+[ERROR]   symbol:   method getR_reg_odo()
+[ERROR]   location: variable odometroDTO of type gestion_vehiculos_combustible.dto.OdometroDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/OdometroMapper.java:[24,9] cannot find symbol
+[ERROR]   symbol:   class Odometro
+[ERROR]   location: class gestion_vehiculos_combustible.mapper.OdometroMapper
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/OdometroMapper.java:[24,31] cannot find symbol
+[ERROR]   symbol:   class Odometro
+[ERROR]   location: class gestion_vehiculos_combustible.mapper.OdometroMapper
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/OdometroMapper.java:[25,29] cannot find symbol
+[ERROR]   symbol:   method getId_odo()
+[ERROR]   location: variable dto of type gestion_vehiculos_combustible.dto.OdometroDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/OdometroMapper.java:[26,32] cannot find symbol
+[ERROR]   symbol:   method getOdoActual()
+[ERROR]   location: variable dto of type gestion_vehiculos_combustible.dto.OdometroDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/OdometroMapper.java:[27,33] cannot find symbol
+[ERROR]   symbol:   method getF_toma_odo()
+[ERROR]   location: variable dto of type gestion_vehiculos_combustible.dto.OdometroDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/OdometroMapper.java:[28,32] cannot find symbol
+[ERROR]   symbol:   method getR_reg_odo()
+[ERROR]   location: variable dto of type gestion_vehiculos_combustible.dto.OdometroDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/OperacionesController.java:[97,60] cannot find symbol
+[ERROR]   symbol:   method getNombre()
+[ERROR]   location: variable operacionesDTO of type gestion_vehiculos_combustible.dto.OperacionesDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/OperacionesMapper.java:[14,40] cannot find symbol
+[ERROR]   symbol:   method getId_operacion()
+[ERROR]   location: variable operaciones of type gestion_vehiculos_combustible.model.Operaciones
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/OperacionesMapper.java:[15,34] cannot find symbol
+[ERROR]   symbol:   method getNombre()
+[ERROR]   location: variable operaciones of type gestion_vehiculos_combustible.model.Operaciones
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/OperacionesMapper.java:[23,35] cannot find symbol
+[ERROR]   symbol:   method getId_operacion()
+[ERROR]   location: variable dto of type gestion_vehiculos_combustible.dto.OperacionesDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/OperacionesMapper.java:[24,29] cannot find symbol
+[ERROR]   symbol:   method getNombre()
+[ERROR]   location: variable dto of type gestion_vehiculos_combustible.dto.OperacionesDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipoRegOdoController.java:[41,9] cannot find symbol
+[ERROR]   symbol:   class TipoRegOdo
+[ERROR]   location: class gestion_vehiculos_combustible.controller.TipoRegOdoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipoRegOdoController.java:[56,25] incompatible types: inference variable T has incompatible bounds
+[ERROR]     equality constraints: gestion_vehiculos_combustible.dto.TipoRegOdoDTO
+[ERROR]     lower bounds: java.lang.Object
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipoRegOdoController.java:[67,18] cannot find symbol
+[ERROR]   symbol:   class TipoRegOdo
+[ERROR]   location: class gestion_vehiculos_combustible.controller.TipoRegOdoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipoRegOdoController.java:[69,27] incompatible types: java.lang.Object cannot be converted to org.springframework.http.ResponseEntity<gestion_vehiculos_combustible.dto.TipoRegOdoDTO>
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipoRegOdoController.java:[94,18] cannot find symbol
+[ERROR]   symbol:   class TipoRegOdo
+[ERROR]   location: class gestion_vehiculos_combustible.controller.TipoRegOdoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipoRegOdoController.java:[96,13] cannot find symbol
+[ERROR]   symbol:   class TipoRegOdo
+[ERROR]   location: class gestion_vehiculos_combustible.controller.TipoRegOdoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipoRegOdoController.java:[97,64] cannot find symbol
+[ERROR]   symbol:   method getTipo_reg_odo()
+[ERROR]   location: variable tipoRegOdoDTO of type gestion_vehiculos_combustible.dto.TipoRegOdoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/TipoRegOdoMapper.java:[22,9] cannot find symbol
+[ERROR]   symbol:   class TipoRegOdo
+[ERROR]   location: class gestion_vehiculos_combustible.mapper.TipoRegOdoMapper
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/TipoRegOdoMapper.java:[22,33] cannot find symbol
+[ERROR]   symbol:   class TipoRegOdo
+[ERROR]   location: class gestion_vehiculos_combustible.mapper.TipoRegOdoMapper
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/TipoRegOdoMapper.java:[23,38] cannot find symbol
+[ERROR]   symbol:   method getId_tipo_reg_odo()
+[ERROR]   location: variable dto of type gestion_vehiculos_combustible.dto.TipoRegOdoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/TipoRegOdoMapper.java:[24,35] cannot find symbol
+[ERROR]   symbol:   method getTipo_reg_odo()
+[ERROR]   location: variable dto of type gestion_vehiculos_combustible.dto.TipoRegOdoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[41,9] cannot find symbol
+[ERROR]   symbol:   class Tipovehiculo
+[ERROR]   location: class gestion_vehiculos_combustible.controller.TipovehiculoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[67,18] cannot find symbol
+[ERROR]   symbol:   class Tipovehiculo
+[ERROR]   location: class gestion_vehiculos_combustible.controller.TipovehiculoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[94,18] cannot find symbol
+[ERROR]   symbol:   class Tipovehiculo
+[ERROR]   location: class gestion_vehiculos_combustible.controller.TipovehiculoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/TipovehiculoController.java:[96,13] cannot find symbol
+[ERROR]   symbol:   class Tipovehiculo
+[ERROR]   location: class gestion_vehiculos_combustible.controller.TipovehiculoController
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/VehiculoController.java:[101,53] cannot find symbol
+[ERROR]   symbol:   method getMarca()
+[ERROR]   location: variable vehiculoDTO of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/VehiculoController.java:[102,54] cannot find symbol
+[ERROR]   symbol:   method getModelo()
+[ERROR]   location: variable vehiculoDTO of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/VehiculoController.java:[103,52] cannot find symbol
+[ERROR]   symbol:   method getTipo()
+[ERROR]   location: variable vehiculoDTO of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/VehiculoController.java:[104,54] cannot find symbol
+[ERROR]   symbol:   method getRampla()
+[ERROR]   location: variable vehiculoDTO of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/VehiculoController.java:[105,52] cannot find symbol
+[ERROR]   symbol:   method getAnio()
+[ERROR]   location: variable vehiculoDTO of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/VehiculoController.java:[106,60] cannot find symbol
+[ERROR]   symbol:   method getAnioRegistro()
+[ERROR]   location: variable vehiculoDTO of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/VehiculoController.java:[107,61] cannot find symbol
+[ERROR]   symbol:   method getNum_motor_veh()
+[ERROR]   location: variable vehiculoDTO of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/controller/VehiculoController.java:[108,62] cannot find symbol
+[ERROR]   symbol:   method getNum_chasis_veh()
+[ERROR]   location: variable vehiculoDTO of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[15,36] cannot find symbol
+[ERROR]   symbol:   method getId_vehiculo()
+[ERROR]   location: variable vehiculo of type gestion_vehiculos_combustible.model.Vehiculo
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[16,32] cannot find symbol
+[ERROR]   symbol:   method getPatente()
+[ERROR]   location: variable vehiculo of type gestion_vehiculos_combustible.model.Vehiculo
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[17,30] cannot find symbol
+[ERROR]   symbol:   method getMarca()
+[ERROR]   location: variable vehiculo of type gestion_vehiculos_combustible.model.Vehiculo
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[18,31] cannot find symbol
+[ERROR]   symbol:   method getModelo()
+[ERROR]   location: variable vehiculo of type gestion_vehiculos_combustible.model.Vehiculo
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[19,29] cannot find symbol
+[ERROR]   symbol:   method getTipo()
+[ERROR]   location: variable vehiculo of type gestion_vehiculos_combustible.model.Vehiculo
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[20,31] cannot find symbol
+[ERROR]   symbol:   method getRampla()
+[ERROR]   location: variable vehiculo of type gestion_vehiculos_combustible.model.Vehiculo
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[21,29] cannot find symbol
+[ERROR]   symbol:   method getAnio()
+[ERROR]   location: variable vehiculo of type gestion_vehiculos_combustible.model.Vehiculo
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[22,37] cannot find symbol
+[ERROR]   symbol:   method getAnioRegistro()
+[ERROR]   location: variable vehiculo of type gestion_vehiculos_combustible.model.Vehiculo
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[23,38] cannot find symbol
+[ERROR]   symbol:   method getNum_motor_veh()
+[ERROR]   location: variable vehiculo of type gestion_vehiculos_combustible.model.Vehiculo
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[24,39] cannot find symbol
+[ERROR]   symbol:   method getNum_chasis_veh()
+[ERROR]   location: variable vehiculo of type gestion_vehiculos_combustible.model.Vehiculo
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[33,34] cannot find symbol
+[ERROR]   symbol:   method getId_vehiculo()
+[ERROR]   location: variable dto of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[34,30] cannot find symbol
+[ERROR]   symbol:   method getPatente()
+[ERROR]   location: variable dto of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[35,28] cannot find symbol
+[ERROR]   symbol:   method getMarca()
+[ERROR]   location: variable dto of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[36,29] cannot find symbol
+[ERROR]   symbol:   method getModelo()
+[ERROR]   location: variable dto of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[37,27] cannot find symbol
+[ERROR]   symbol:   method getTipo()
+[ERROR]   location: variable dto of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[38,29] cannot find symbol
+[ERROR]   symbol:   method getRampla()
+[ERROR]   location: variable dto of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[39,27] cannot find symbol
+[ERROR]   symbol:   method getAnio()
+[ERROR]   location: variable dto of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[40,35] cannot find symbol
+[ERROR]   symbol:   method getAnioRegistro()
+[ERROR]   location: variable dto of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[41,36] cannot find symbol
+[ERROR]   symbol:   method getNum_motor_veh()
+[ERROR]   location: variable dto of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] /C:/Users/rique/Desktop/sistemaCombustible/Sistema-Seguros-y-Combustible/tad/tad/src/main/java/gestion_vehiculos_combustible/mapper/VehiculoMapper.java:[42,37] cannot find symbol
+[ERROR]   symbol:   method getNum_chasis_veh()
+[ERROR]   location: variable dto of type gestion_vehiculos_combustible.dto.VehiculoDTO
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

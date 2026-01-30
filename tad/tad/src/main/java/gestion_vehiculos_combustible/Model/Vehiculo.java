@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 public class Vehiculo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long id_vehiculo;
     private String patente;
     private String marca;
     private String modelo;
