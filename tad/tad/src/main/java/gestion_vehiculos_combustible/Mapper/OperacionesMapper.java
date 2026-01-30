@@ -13,8 +13,6 @@ public class OperacionesMapper {
         OperacionesDTO dto = new OperacionesDTO();
         dto.setId(operaciones.getId());
         dto.setNombre(operaciones.getNombre());
-        dto.setConcepto(operaciones.getConcepto());
-        dto.setRazonSocial(operaciones.getRazonSocial());
         return dto;
     }
 
@@ -24,8 +22,6 @@ public class OperacionesMapper {
         Operaciones entity = new Operaciones();
         entity.setId(dto.getId());
         entity.setNombre(dto.getNombre());
-        entity.setConcepto(dto.getConcepto());
-        entity.setRazonSocial(dto.getRazonSocial());
         return entity;
     }
 }

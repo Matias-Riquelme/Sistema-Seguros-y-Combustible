@@ -30,6 +30,12 @@ public class BaseController {
     @Autowired
     private BaseMapper baseMapper;
 
+    /**
+     * Crea una nueva base.
+     * 
+     * @param baseDTO Datos de la base a crear.
+     * @return ResponseEntity con la base creada.
+     */
     @PostMapping
     public ResponseEntity<BaseDTO> crearBase(@RequestBody @NonNull BaseDTO baseDTO) {
         Base base = baseMapper.toEntity(baseDTO);
@@ -38,6 +44,11 @@ public class BaseController {
         return ResponseEntity.ok(baseMapper.toDTO(baseService.guardarBase(base)));
     }
 
+    /**
+     * Lista todas las bases registradas.
+     * 
+     * @return Lista de BaseDTO.
+     */
     @GetMapping
     public List<BaseDTO> listarBases() {
         return baseService.listarBases().stream()
@@ -45,6 +56,12 @@ public class BaseController {
                 .collect(Collectors.toList());
     }
 
+    /**
+     * Obtiene una base por su ID.
+     * 
+     * @param id ID de la base.
+     * @return ResponseEntity con la base encontrada o 404.
+     */
     @GetMapping("/{id}")
     public ResponseEntity<BaseDTO> obtenerBase(@PathVariable @NonNull Long id) {
         Optional<Base> base = baseService.obtenerBasePorId(id);
@@ -52,12 +69,25 @@ public class BaseController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
+    /**
+     * Elimina una base por su ID.
+     * 
+     * @param id ID de la base a eliminar.
+     * @return ResponseEntity con estado 204.
+     */
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> eliminarBase(@PathVariable @NonNull Long id) {
         baseService.eliminarBase(id);
         return ResponseEntity.noContent().build();
     }
 
+    /**
+     * Actualiza una base existente.
+     * 
+     * @param id      ID de la base a actualizar.
+     * @param baseDTO Nuevos datos de la base.
+     * @return ResponseEntity con la base actualizada.
+     */
     @PostMapping("/actualizar/{id}")
     public ResponseEntity<BaseDTO> actualizarBase(@PathVariable @NonNull Long id,
             @RequestBody @NonNull BaseDTO baseDTO) {
@@ -65,7 +95,6 @@ public class BaseController {
         if (baseExistente.isPresent()) {
             Base baseActualizado = baseExistente.get();
             baseActualizado.setNombre(baseDTO.getNombre());
-            baseActualizado.setUbicacion(baseDTO.getUbicacion());
             return ResponseEntity.ok(baseMapper.toDTO(baseService.guardarBase(baseActualizado)));
         } else {
             return ResponseEntity.notFound().build();

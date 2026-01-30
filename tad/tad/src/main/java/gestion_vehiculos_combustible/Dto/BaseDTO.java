@@ -10,5 +10,4 @@ import lombok.NoArgsConstructor;
 public class BaseDTO {
     private Long id;
     private String nombre;
-    private String ubicacion;
 }

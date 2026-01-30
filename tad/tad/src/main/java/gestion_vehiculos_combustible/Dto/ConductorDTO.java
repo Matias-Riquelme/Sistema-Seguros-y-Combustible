@@ -15,4 +15,5 @@ public class ConductorDTO {
     private String apellidoMaterno;
     private String rut;
     private String telefono;
+    private String direccion;
 }

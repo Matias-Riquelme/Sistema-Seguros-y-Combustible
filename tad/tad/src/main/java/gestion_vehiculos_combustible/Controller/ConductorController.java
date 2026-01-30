@@ -30,6 +30,12 @@ public class ConductorController {
     @Autowired
     private ConductorMapper conductorMapper;
 
+    /**
+     * Crea un nuevo conductor.
+     * 
+     * @param conductorDTO Datos del conductor a crear.
+     * @return ResponseEntity con el conductor creado.
+     */
     @PostMapping
     public ResponseEntity<ConductorDTO> crearConductor(@RequestBody @NonNull ConductorDTO conductorDTO) {
         Conductor conductor = conductorMapper.toEntity(conductorDTO);
@@ -38,6 +44,11 @@ public class ConductorController {
         return ResponseEntity.ok(conductorMapper.toDTO(conductorService.guardarConductor(conductor)));
     }
 
+    /**
+     * Lista todos los conductores registrados.
+     * 
+     * @return Lista de ConductorDTO.
+     */
     @GetMapping
     public List<ConductorDTO> listarConductores() {
         return conductorService.listarConductores().stream()
@@ -45,6 +56,12 @@ public class ConductorController {
                 .collect(Collectors.toList());
     }
 
+    /**
+     * Obtiene un conductor por su ID.
+     * 
+     * @param id ID del conductor.
+     * @return ResponseEntity con el conductor encontrado o 404.
+     */
     @GetMapping("/{id}")
     public ResponseEntity<ConductorDTO> obtenerConductor(@PathVariable @NonNull Long id) {
         Optional<Conductor> conductor = conductorService.obtenerConductorPorId(id);
@@ -52,12 +69,25 @@ public class ConductorController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
+    /**
+     * Elimina un conductor por su ID.
+     * 
+     * @param id ID del conductor a eliminar.
+     * @return ResponseEntity con estado 204.
+     */
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> eliminarConductor(@PathVariable @NonNull Long id) {
         conductorService.eliminarConductor(id);
         return ResponseEntity.noContent().build();
     }
 
+    /**
+     * Actualiza un conductor existente.
+     * 
+     * @param id           ID del conductor a actualizar.
+     * @param conductorDTO Nuevos datos del conductor.
+     * @return ResponseEntity con el conductor actualizado.
+     */
     @PostMapping("/actualizar/{id}")
     public ResponseEntity<ConductorDTO> actualizarConductor(@PathVariable @NonNull Long id,
             @RequestBody @NonNull ConductorDTO conductorDTO) {
@@ -70,6 +100,7 @@ public class ConductorController {
             conductorActualizado.setApellidoMaterno(conductorDTO.getApellidoMaterno());
             conductorActualizado.setRut(conductorDTO.getRut());
             conductorActualizado.setTelefono(conductorDTO.getTelefono());
+            conductorActualizado.setDireccion(conductorDTO.getDireccion());
 
             return ResponseEntity.ok(conductorMapper.toDTO(conductorService.guardarConductor(conductorActualizado)));
         } else {

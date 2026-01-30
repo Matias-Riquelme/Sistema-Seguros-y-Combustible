@@ -10,6 +10,4 @@ import lombok.NoArgsConstructor;
 public class OperacionesDTO {
     private Long id;
     private String nombre;
-    private String concepto;
-    private String razonSocial;
 }

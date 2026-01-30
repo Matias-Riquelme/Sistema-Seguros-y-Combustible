@@ -30,6 +30,12 @@ public class OperacionesController {
     @Autowired
     private OperacionesMapper operacionesMapper;
 
+    /**
+     * Crea una nueva operación.
+     * 
+     * @param operacionesDTO Datos de la operación a crear.
+     * @return ResponseEntity con la operación creada.
+     */
     @PostMapping
     public ResponseEntity<OperacionesDTO> crearOperaciones(@RequestBody @NonNull OperacionesDTO operacionesDTO) {
         Operaciones operaciones = operacionesMapper.toEntity(operacionesDTO);
@@ -38,6 +44,11 @@ public class OperacionesController {
         return ResponseEntity.ok(operacionesMapper.toDTO(operacionesService.guardarOperaciones(operaciones)));
     }
 
+    /**
+     * Lista todas las operaciones registradas.
+     * 
+     * @return Lista de OperacionesDTO.
+     */
     @GetMapping
     public List<OperacionesDTO> listarOperaciones() {
         return operacionesService.listarOperaciones().stream()
@@ -45,6 +56,12 @@ public class OperacionesController {
                 .collect(Collectors.toList());
     }
 
+    /**
+     * Obtiene una operación por su ID.
+     * 
+     * @param id ID de la operación.
+     * @return ResponseEntity con la operación encontrada o 404.
+     */
     @GetMapping("/{id}")
     public ResponseEntity<OperacionesDTO> obtenerOperaciones(@PathVariable @NonNull Long id) {
         Optional<Operaciones> operaciones = operacionesService.obtenerOperacionesPorId(id);
@@ -52,12 +69,25 @@ public class OperacionesController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
+    /**
+     * Elimina una operación por su ID.
+     * 
+     * @param id ID de la operación a eliminar.
+     * @return ResponseEntity con estado 204.
+     */
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> eliminarOperaciones(@PathVariable @NonNull Long id) {
         operacionesService.eliminarOperaciones(id);
         return ResponseEntity.noContent().build();
     }
 
+    /**
+     * Actualiza una operación existente.
+     * 
+     * @param id             ID de la operación a actualizar.
+     * @param operacionesDTO Nuevos datos de la operación.
+     * @return ResponseEntity con la operación actualizada.
+     */
     @PostMapping("/actualizar/{id}")
     public ResponseEntity<OperacionesDTO> actualizarOperaciones(@PathVariable @NonNull Long id,
             @RequestBody @NonNull OperacionesDTO operacionesDTO) {
@@ -65,8 +95,6 @@ public class OperacionesController {
         if (operacionesExistente.isPresent()) {
             Operaciones operacionesActualizado = operacionesExistente.get();
             operacionesActualizado.setNombre(operacionesDTO.getNombre());
-            operacionesActualizado.setConcepto(operacionesDTO.getConcepto());
-            operacionesActualizado.setRazonSocial(operacionesDTO.getRazonSocial());
             return ResponseEntity
                     .ok(operacionesMapper.toDTO(operacionesService.guardarOperaciones(operacionesActualizado)));
         } else {

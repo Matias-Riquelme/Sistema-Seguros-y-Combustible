@@ -13,7 +13,6 @@ public class BaseMapper {
         BaseDTO dto = new BaseDTO();
         dto.setId(base.getId());
         dto.setNombre(base.getNombre());
-        dto.setUbicacion(base.getUbicacion());
         return dto;
     }
 
@@ -23,7 +22,6 @@ public class BaseMapper {
         Base entity = new Base();
         entity.setId(dto.getId());
         entity.setNombre(dto.getNombre());
-        entity.setUbicacion(dto.getUbicacion());
         return entity;
     }
 }

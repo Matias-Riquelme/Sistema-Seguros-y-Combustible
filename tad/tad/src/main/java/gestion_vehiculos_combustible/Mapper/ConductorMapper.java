@@ -18,6 +18,7 @@ public class ConductorMapper {
         dto.setApellidoMaterno(conductor.getApellidoMaterno());
         dto.setRut(conductor.getRut());
         dto.setTelefono(conductor.getTelefono());
+        dto.setDireccion(conductor.getDireccion());
         return dto;
     }
 
@@ -32,6 +33,7 @@ public class ConductorMapper {
         entity.setApellidoMaterno(dto.getApellidoMaterno());
         entity.setRut(dto.getRut());
         entity.setTelefono(dto.getTelefono());
+        entity.setDireccion(dto.getDireccion());
         return entity;
     }
 }

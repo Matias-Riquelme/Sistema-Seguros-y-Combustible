@@ -24,4 +24,5 @@ public class Conductor {
     private String apellidoMaterno;
     private String rut;
     private String telefono;
+    private String direccion;
 }

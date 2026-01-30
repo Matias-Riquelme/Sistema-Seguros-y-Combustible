@@ -23,12 +23,9 @@ public class Vehiculo {
     private String modelo;
     private String tipo;
     private String rampla;
-    private double KMinicial;
-    private double kilometros; // diferencia entre KMinicial y KMFinal
-    private double KMFinal;
-    private double consumos; // Los litros cargados
-    private double rendimiento;
     private int anio;
     private int anioRegistro;
+    private int num_motor_veh;
+    private int num_chasis_veh;
 
 }

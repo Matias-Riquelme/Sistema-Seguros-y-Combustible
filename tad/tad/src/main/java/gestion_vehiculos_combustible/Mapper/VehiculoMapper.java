@@ -18,13 +18,10 @@ public class VehiculoMapper {
         dto.setModelo(vehiculo.getModelo());
         dto.setTipo(vehiculo.getTipo());
         dto.setRampla(vehiculo.getRampla());
-        dto.setKMinicial(vehiculo.getKMinicial());
-        dto.setKilometros(vehiculo.getKilometros());
-        dto.setKMFinal(vehiculo.getKMFinal());
         dto.setAnio(vehiculo.getAnio());
         dto.setAnioRegistro(vehiculo.getAnioRegistro());
-        dto.setConsumos(vehiculo.getConsumos());
-        dto.setRendimiento(vehiculo.getRendimiento());
+        dto.setNum_motor_veh(vehiculo.getNum_motor_veh());
+        dto.setNum_chasis_veh(vehiculo.getNum_chasis_veh());
         return dto;
     }
 
@@ -39,13 +36,10 @@ public class VehiculoMapper {
         entity.setModelo(dto.getModelo());
         entity.setTipo(dto.getTipo());
         entity.setRampla(dto.getRampla());
-        entity.setKMinicial(dto.getKMinicial());
-        entity.setKilometros(dto.getKilometros());
-        entity.setKMFinal(dto.getKMFinal());
         entity.setAnio(dto.getAnio());
         entity.setAnioRegistro(dto.getAnioRegistro());
-        entity.setConsumos(dto.getConsumos());
-        entity.setRendimiento(dto.getRendimiento());
+        entity.setNum_motor_veh(dto.getNum_motor_veh());
+        entity.setNum_chasis_veh(dto.getNum_chasis_veh());
         return entity;
     }
 }
