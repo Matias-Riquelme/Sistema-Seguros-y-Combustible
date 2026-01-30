@@ -2,7 +2,6 @@ package tadGestionUsuario.service.impl;
 
 import tadGestionUsuario.DTO.UserDTO;
 import tadGestionUsuario.service.IKeycloakService;
-import tadGestionUsuario.util.KeycloakProvider;
 import lombok.extern.slf4j.Slf4j;
 import org.keycloak.OAuth2Constants;
 import org.keycloak.admin.client.resource.RealmResource;
