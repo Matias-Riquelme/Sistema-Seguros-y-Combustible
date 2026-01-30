@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class VehiculoDTO {
-    private Long id;
+    private Long id_vehiculo;
     private String patente;
     private String marca;
     private String modelo;

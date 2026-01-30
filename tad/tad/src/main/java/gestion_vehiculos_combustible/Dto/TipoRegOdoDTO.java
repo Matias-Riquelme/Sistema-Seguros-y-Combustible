@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class BaseDTO {
-    private Long id_base;
-    private String nombre;
+public class TipoRegOdoDTO {
+    private Long id_tipo_reg_odo;
+    private String tipo_reg_odo;
 }

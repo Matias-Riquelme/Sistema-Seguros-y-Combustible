@@ -11,7 +11,7 @@ public class BaseMapper {
         if (base == null)
             return null;
         BaseDTO dto = new BaseDTO();
-        dto.setId(base.getId());
+        dto.setId_base(base.getId_base());
         dto.setNombre(base.getNombre());
         return dto;
     }
@@ -20,7 +20,7 @@ public class BaseMapper {
         if (dto == null)
             return null;
         Base entity = new Base();
-        entity.setId(dto.getId());
+        entity.setId_base(dto.getId_base());
         entity.setNombre(dto.getNombre());
         return entity;
     }

@@ -11,7 +11,7 @@ public class OperacionesMapper {
         if (operaciones == null)
             return null;
         OperacionesDTO dto = new OperacionesDTO();
-        dto.setId(operaciones.getId());
+        dto.setId_operacion(operaciones.getId_operacion());
         dto.setNombre(operaciones.getNombre());
         return dto;
     }
@@ -20,7 +20,7 @@ public class OperacionesMapper {
         if (dto == null)
             return null;
         Operaciones entity = new Operaciones();
-        entity.setId(dto.getId());
+        entity.setId_operacion(dto.getId_operacion());
         entity.setNombre(dto.getNombre());
         return entity;
     }

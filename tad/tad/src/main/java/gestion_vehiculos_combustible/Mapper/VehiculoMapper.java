@@ -12,7 +12,7 @@ public class VehiculoMapper {
             return null;
 
         VehiculoDTO dto = new VehiculoDTO();
-        dto.setId(vehiculo.getId());
+        dto.setId_vehiculo(vehiculo.getId_vehiculo());
         dto.setPatente(vehiculo.getPatente());
         dto.setMarca(vehiculo.getMarca());
         dto.setModelo(vehiculo.getModelo());
@@ -30,7 +30,7 @@ public class VehiculoMapper {
             return null;
 
         Vehiculo entity = new Vehiculo();
-        entity.setId(dto.getId());
+        entity.setId_vehiculo(dto.getId_vehiculo());
         entity.setPatente(dto.getPatente());
         entity.setMarca(dto.getMarca());
         entity.setModelo(dto.getModelo());
