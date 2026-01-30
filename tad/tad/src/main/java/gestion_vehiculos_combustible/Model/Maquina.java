@@ -1,4 +1,4 @@
-package gestion_vehiculos_combustible.Model;
+package gestion_vehiculos_combustible.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -20,8 +20,7 @@ public class Maquina {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @NonNull
     private Long id;
-    private double KMinicial;
-    private double KMFinal;
-    private double KMTotales;
+    private double SInicial;
+    private double SFinal;
     private double litros;
 }

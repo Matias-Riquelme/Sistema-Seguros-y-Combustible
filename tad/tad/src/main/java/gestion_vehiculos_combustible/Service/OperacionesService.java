@@ -1,4 +1,4 @@
-package gestion_vehiculos_combustible.Service;
+package gestion_vehiculos_combustible.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Service;
 
-import gestion_vehiculos_combustible.Model.Operaciones;
-import gestion_vehiculos_combustible.Repository.OperacionesRepository;
+import gestion_vehiculos_combustible.model.Operaciones;
+import gestion_vehiculos_combustible.repository.OperacionesRepository;
 
 @Service
 public class OperacionesService {

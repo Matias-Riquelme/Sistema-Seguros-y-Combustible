@@ -1,7 +1,7 @@
-package gestion_vehiculos_combustible.Mapper;
+package gestion_vehiculos_combustible.mapper;
 
-import gestion_vehiculos_combustible.Dto.OperacionesDTO;
-import gestion_vehiculos_combustible.Model.Operaciones;
+import gestion_vehiculos_combustible.dto.OperacionesDTO;
+import gestion_vehiculos_combustible.model.Operaciones;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -1,4 +1,4 @@
-package gestion_vehiculos_combustible.Controller;
+package gestion_vehiculos_combustible.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -15,10 +15,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.lang.NonNull;
 
-import gestion_vehiculos_combustible.Dto.CombustibleDTO;
-import gestion_vehiculos_combustible.Mapper.CombustibleMapper;
-import gestion_vehiculos_combustible.Model.Combustible;
-import gestion_vehiculos_combustible.Service.CombustibleService;
+import gestion_vehiculos_combustible.dto.CombustibleDTO;
+import gestion_vehiculos_combustible.mapper.CombustibleMapper;
+import gestion_vehiculos_combustible.model.Combustible;
+import gestion_vehiculos_combustible.service.CombustibleService;
 
 @RestController
 @RequestMapping("/api/combustible")
@@ -64,11 +64,10 @@ public class CombustibleController {
         Optional<Combustible> combustibleExistente = combustibleService.obtenerCombustiblePorId(id);
         if (combustibleExistente.isPresent()) {
             Combustible combustibleActualizado = combustibleExistente.get();
-            combustibleActualizado.setNombre(combustibleDTO.getNombre());
             combustibleActualizado.setPrecio(combustibleDTO.getPrecio());
+            combustibleActualizado.setSInicial(combustibleDTO.getSInicial());
+            combustibleActualizado.setSFinal(combustibleDTO.getSFinal());
             combustibleActualizado.setConsumos(combustibleDTO.getConsumos());
-            combustibleActualizado.setKilometraje(combustibleDTO.getKilometraje());
-            combustibleActualizado.setRendimiento(combustibleDTO.getRendimiento());
             combustibleActualizado.setMes(combustibleDTO.getMes());
             combustibleActualizado.setMes2(combustibleDTO.getMes2());
             combustibleActualizado.setEstanque(combustibleDTO.getEstanque());
@@ -77,6 +76,13 @@ public class CombustibleController {
         } else {
             return ResponseEntity.notFound().build();
         }
+    }
+
+    @GetMapping("/vehiculo/{vehiculoId}")
+    public List<CombustibleDTO> listarPorVehiculo(@PathVariable @NonNull Long vehiculoId) {
+        return combustibleService.listarCombustiblesPorVehiculo(vehiculoId).stream()
+                .map(combustibleMapper::toDTO)
+                .collect(Collectors.toList());
     }
 
 }

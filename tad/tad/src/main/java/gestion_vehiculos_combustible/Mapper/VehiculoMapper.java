@@ -1,7 +1,7 @@
-package gestion_vehiculos_combustible.Mapper;
+package gestion_vehiculos_combustible.mapper;
 
-import gestion_vehiculos_combustible.Dto.VehiculoDTO;
-import gestion_vehiculos_combustible.Model.Vehiculo;
+import gestion_vehiculos_combustible.dto.VehiculoDTO;
+import gestion_vehiculos_combustible.model.Vehiculo;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -18,8 +18,13 @@ public class VehiculoMapper {
         dto.setModelo(vehiculo.getModelo());
         dto.setTipo(vehiculo.getTipo());
         dto.setRampla(vehiculo.getRampla());
+        dto.setKMinicial(vehiculo.getKMinicial());
+        dto.setKilometros(vehiculo.getKilometros());
+        dto.setKMFinal(vehiculo.getKMFinal());
         dto.setAnio(vehiculo.getAnio());
         dto.setAnioRegistro(vehiculo.getAnioRegistro());
+        dto.setConsumos(vehiculo.getConsumos());
+        dto.setRendimiento(vehiculo.getRendimiento());
         return dto;
     }
 
@@ -34,8 +39,13 @@ public class VehiculoMapper {
         entity.setModelo(dto.getModelo());
         entity.setTipo(dto.getTipo());
         entity.setRampla(dto.getRampla());
+        entity.setKMinicial(dto.getKMinicial());
+        entity.setKilometros(dto.getKilometros());
+        entity.setKMFinal(dto.getKMFinal());
         entity.setAnio(dto.getAnio());
         entity.setAnioRegistro(dto.getAnioRegistro());
+        entity.setConsumos(dto.getConsumos());
+        entity.setRendimiento(dto.getRendimiento());
         return entity;
     }
 }

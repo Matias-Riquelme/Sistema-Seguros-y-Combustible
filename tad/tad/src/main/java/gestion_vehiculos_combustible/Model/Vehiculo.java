@@ -1,4 +1,4 @@
-package gestion_vehiculos_combustible.Model;
+package gestion_vehiculos_combustible.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -18,12 +18,16 @@ public class Vehiculo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String patente;
     private String marca;
     private String modelo;
     private String tipo;
     private String rampla;
+    private double KMinicial;
+    private double kilometros; // diferencia entre KMinicial y KMFinal
+    private double KMFinal;
+    private double consumos; // Los litros cargados
+    private double rendimiento;
     private int anio;
     private int anioRegistro;
 

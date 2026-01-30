@@ -1,4 +1,4 @@
-package gestion_vehiculos_combustible.Dto;
+package gestion_vehiculos_combustible.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

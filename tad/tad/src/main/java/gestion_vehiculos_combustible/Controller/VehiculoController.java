@@ -1,4 +1,4 @@
-package gestion_vehiculos_combustible.Controller;
+package gestion_vehiculos_combustible.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -15,10 +15,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.lang.NonNull;
 
-import gestion_vehiculos_combustible.Dto.VehiculoDTO;
-import gestion_vehiculos_combustible.Mapper.VehiculoMapper;
-import gestion_vehiculos_combustible.Model.Vehiculo;
-import gestion_vehiculos_combustible.Service.VehiculoService;
+import gestion_vehiculos_combustible.dto.VehiculoDTO;
+import gestion_vehiculos_combustible.mapper.VehiculoMapper;
+import gestion_vehiculos_combustible.model.Vehiculo;
+import gestion_vehiculos_combustible.service.VehiculoService;
 
 @RestController
 @RequestMapping("/api/vehiculos")
@@ -71,8 +71,11 @@ public class VehiculoController {
             vehiculoActualizado.setModelo(vehiculoDTO.getModelo());
             vehiculoActualizado.setTipo(vehiculoDTO.getTipo());
             vehiculoActualizado.setRampla(vehiculoDTO.getRampla());
+            vehiculoActualizado.setKMinicial(vehiculoDTO.getKMinicial());
+            vehiculoActualizado.setKMFinal(vehiculoDTO.getKMFinal());
             vehiculoActualizado.setAnio(vehiculoDTO.getAnio());
             vehiculoActualizado.setAnioRegistro(vehiculoDTO.getAnioRegistro());
+            vehiculoActualizado.setConsumos(vehiculoDTO.getConsumos());
 
             Vehiculo guardado = vehiculoService.guardarVehiculo(vehiculoActualizado);
             return ResponseEntity.ok(vehiculoMapper.toDTO(guardado));

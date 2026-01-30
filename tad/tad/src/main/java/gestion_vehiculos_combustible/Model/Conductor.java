@@ -1,4 +1,4 @@
-package gestion_vehiculos_combustible.Model;
+package gestion_vehiculos_combustible.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

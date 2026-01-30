@@ -1,4 +1,4 @@
-package gestion_vehiculos_combustible.Controller;
+package gestion_vehiculos_combustible.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -15,10 +15,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.lang.NonNull;
 
-import gestion_vehiculos_combustible.Dto.OperacionesDTO;
-import gestion_vehiculos_combustible.Mapper.OperacionesMapper;
-import gestion_vehiculos_combustible.Model.Operaciones;
-import gestion_vehiculos_combustible.Service.OperacionesService;
+import gestion_vehiculos_combustible.dto.OperacionesDTO;
+import gestion_vehiculos_combustible.mapper.OperacionesMapper;
+import gestion_vehiculos_combustible.model.Operaciones;
+import gestion_vehiculos_combustible.service.OperacionesService;
 
 @RestController
 @RequestMapping("/api/operaciones")

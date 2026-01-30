@@ -1,4 +1,4 @@
-package gestion_vehiculos_combustible.Controller;
+package gestion_vehiculos_combustible.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -15,10 +15,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.lang.NonNull;
 
-import gestion_vehiculos_combustible.Dto.MaquinaDTO;
-import gestion_vehiculos_combustible.Mapper.MaquinaMapper;
-import gestion_vehiculos_combustible.Model.Maquina;
-import gestion_vehiculos_combustible.Service.MaquinaService;
+import gestion_vehiculos_combustible.dto.MaquinaDTO;
+import gestion_vehiculos_combustible.mapper.MaquinaMapper;
+import gestion_vehiculos_combustible.model.Maquina;
+import gestion_vehiculos_combustible.service.MaquinaService;
 
 @RestController
 @RequestMapping("/api/maquinas")
@@ -64,9 +64,8 @@ public class MaquinaController {
         Optional<Maquina> maquinaExistente = maquinaService.obtenerMaquinaPorId(id);
         if (maquinaExistente.isPresent()) {
             Maquina maquinaActualizado = maquinaExistente.get();
-            maquinaActualizado.setKMinicial(maquinaDTO.getKMinicial());
-            maquinaActualizado.setKMFinal(maquinaDTO.getKMFinal());
-            maquinaActualizado.setKMTotales(maquinaDTO.getKMTotales());
+            maquinaActualizado.setSInicial(maquinaDTO.getSInicial());
+            maquinaActualizado.setSFinal(maquinaDTO.getSFinal());
             maquinaActualizado.setLitros(maquinaDTO.getLitros());
             return ResponseEntity.ok(maquinaMapper.toDTO(maquinaService.guardarMaquina(maquinaActualizado)));
         } else {

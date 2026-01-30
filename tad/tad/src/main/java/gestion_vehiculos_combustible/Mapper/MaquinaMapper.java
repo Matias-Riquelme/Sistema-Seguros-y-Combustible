@@ -1,7 +1,7 @@
-package gestion_vehiculos_combustible.Mapper;
+package gestion_vehiculos_combustible.mapper;
 
-import gestion_vehiculos_combustible.Dto.MaquinaDTO;
-import gestion_vehiculos_combustible.Model.Maquina;
+import gestion_vehiculos_combustible.dto.MaquinaDTO;
+import gestion_vehiculos_combustible.model.Maquina;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -12,9 +12,8 @@ public class MaquinaMapper {
             return null;
         MaquinaDTO dto = new MaquinaDTO();
         dto.setId(maquina.getId());
-        dto.setKMinicial(maquina.getKMinicial());
-        dto.setKMFinal(maquina.getKMFinal());
-        dto.setKMTotales(maquina.getKMTotales());
+        dto.setSInicial(maquina.getSInicial());
+        dto.setSFinal(maquina.getSFinal());
         dto.setLitros(maquina.getLitros());
         return dto;
     }
@@ -24,9 +23,8 @@ public class MaquinaMapper {
             return null;
         Maquina entity = new Maquina();
         entity.setId(dto.getId());
-        entity.setKMinicial(dto.getKMinicial());
-        entity.setKMFinal(dto.getKMFinal());
-        entity.setKMTotales(dto.getKMTotales());
+        entity.setSInicial(dto.getSInicial());
+        entity.setSFinal(dto.getSFinal());
         entity.setLitros(dto.getLitros());
         return entity;
     }

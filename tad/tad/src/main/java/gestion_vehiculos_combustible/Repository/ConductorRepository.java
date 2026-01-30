@@ -1,4 +1,4 @@
-package gestion_vehiculos_combustible.Repository;
+package gestion_vehiculos_combustible.repository;
 
 import java.util.List;
 import java.util.Optional;
@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Repository;
 
-import gestion_vehiculos_combustible.Model.Conductor;
+import gestion_vehiculos_combustible.model.Conductor;
 
 @Repository
 public interface ConductorRepository extends JpaRepository<Conductor, Long> {

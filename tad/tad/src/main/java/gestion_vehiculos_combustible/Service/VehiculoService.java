@@ -1,4 +1,4 @@
-package gestion_vehiculos_combustible.Service;
+package gestion_vehiculos_combustible.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Service;
 
-import gestion_vehiculos_combustible.Model.Vehiculo;
-import gestion_vehiculos_combustible.Repository.VehiculoRepository;
+import gestion_vehiculos_combustible.model.Vehiculo;
+import gestion_vehiculos_combustible.repository.VehiculoRepository;
 
 @Service
 public class VehiculoService {
@@ -17,6 +17,10 @@ public class VehiculoService {
     private VehiculoRepository vehiculoRepository;
 
     public Vehiculo guardarVehiculo(@NonNull Vehiculo vehiculo) {
+        return vehiculoRepository.save(vehiculo);
+    }
+
+    public Vehiculo actualizarVehiculo(@NonNull Vehiculo vehiculo) {
         return vehiculoRepository.save(vehiculo);
     }
 
@@ -37,5 +41,4 @@ public class VehiculoService {
     public List<Vehiculo> obtenerVehiculosPorPatente(@NonNull String patente) {
         return vehiculoRepository.findByPatente(patente);
     }
-
 }
