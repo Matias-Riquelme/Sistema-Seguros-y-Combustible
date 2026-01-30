@@ -28,8 +28,8 @@ public class FormularioIncidente {
     @JoinColumn(name = "id_tipo_incidente")
     private TipoIncidente tipoIncidente;
 
-    @Column(name = "f_ingreso_form")
-    private LocalDateTime fIngresoForm;
+    @Column(name = "fecha_ingreso_form")
+    private LocalDateTime fechaIngresoForm;
 
     @Column(name = "fecha_hora_incidente")
     private LocalDateTime fechaHoraIncidente;

@@ -29,8 +29,8 @@ public class ContratanteServices {
     public Contratante actualizarContratante(Integer id, Contratante contratante) {
         Contratante existente = contratanteRepository.findById(id).orElse(null);
         if (existente != null) {
-            existente.setRazonSocialCon(contratante.getRazonSocialCon());
-            existente.setRutCon(contratante.getRutCon());
+            existente.setRazonSocialContra(contratante.getRazonSocialContra());
+            existente.setRutContra(contratante.getRutContra());
             return contratanteRepository.save(existente);
         }
         return null;

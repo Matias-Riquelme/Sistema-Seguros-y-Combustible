@@ -52,4 +52,15 @@ public class FormularioIncidenteServices {
     public void eliminarFormulario(Integer id) {
         formularioIncidenteRepository.deleteById(id);
     }
+
+    // Metodo para contar todos los registros asociados a un siniestro
+    public List<FormularioIncidente> findBySiniestroId(Integer siniestroId) {
+        return formularioIncidenteRepository.findBySiniestroId(siniestroId);
+    }
+
+    // Metodo para contar todos los registros asociados a un siniestro
+    public Long countBySiniestroId(Integer siniestroId) {
+        return formularioIncidenteRepository.countBySiniestroId(siniestroId);
+    }
+
 }

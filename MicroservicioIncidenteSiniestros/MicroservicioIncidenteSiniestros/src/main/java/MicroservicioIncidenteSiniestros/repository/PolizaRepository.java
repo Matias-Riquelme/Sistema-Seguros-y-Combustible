@@ -10,6 +10,9 @@ import java.util.Optional;
 @Repository
 public interface PolizaRepository extends JpaRepository<Poliza, Integer> {
 
+    // Consulta para visualiza la cantidad de siniestros relacionado a una poliza
+    public Long countByPolizaId(Integer polizaId);
+
     @Query("SELECT s.poliza FROM Siniestro s WHERE s.idSin = :idSin")
     Optional<Poliza> findBySiniestroIdSin(@Param("idSin") Integer idSin);
 }

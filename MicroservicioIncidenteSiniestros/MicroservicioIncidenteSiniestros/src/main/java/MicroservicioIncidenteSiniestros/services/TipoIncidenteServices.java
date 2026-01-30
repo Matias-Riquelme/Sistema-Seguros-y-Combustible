@@ -29,7 +29,7 @@ public class TipoIncidenteServices {
     public TipoIncidente actualizarTipoIncidente(Integer id, TipoIncidente tipoIncidente) {
         TipoIncidente existente = tipoIncidenteRepository.findById(id).orElse(null);
         if (existente != null) {
-            existente.setNomTipoIncidente(tipoIncidente.getNomTipoIncidente());
+            existente.setNombreTipoIncidente(tipoIncidente.getNombreTipoIncidente());
             return tipoIncidenteRepository.save(existente);
         }
         return null;

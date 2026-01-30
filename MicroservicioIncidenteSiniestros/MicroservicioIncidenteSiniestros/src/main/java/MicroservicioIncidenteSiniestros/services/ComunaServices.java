@@ -29,7 +29,7 @@ public class ComunaServices {
     public Comuna actualizarComuna(Integer id, Comuna comuna) {
         Comuna existente = comunaRepository.findById(id).orElse(null);
         if (existente != null) {
-            existente.setNomComuna(comuna.getNomComuna());
+            existente.setNombreComuna(comuna.getNombreComuna());
             existente.setRegion(comuna.getRegion());
             return comunaRepository.save(existente);
         }

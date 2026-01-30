@@ -58,4 +58,9 @@ public class PolizaServices {
     public Poliza obtenerPolizaAsociadaASiniestro(Integer idSin) {
         return polizaRepository.findBySiniestroIdSin(idSin).orElse(null);
     }
+
+    // Contar siniestros por poliza
+    public Long contarSiniestrosPorPoliza(Integer polizaId) {
+        return polizaRepository.countByPolizaId(polizaId);
+    }
 }

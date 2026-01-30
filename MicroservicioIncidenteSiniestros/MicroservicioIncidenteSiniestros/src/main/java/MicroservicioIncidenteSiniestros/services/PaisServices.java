@@ -29,7 +29,7 @@ public class PaisServices {
     public Pais actualizarPais(Integer id, Pais pais) {
         Pais existente = paisRepository.findById(id).orElse(null);
         if (existente != null) {
-            existente.setNomPais(pais.getNomPais());
+            existente.setNombrePais(pais.getNombrePais());
             return paisRepository.save(existente);
         }
         return null;

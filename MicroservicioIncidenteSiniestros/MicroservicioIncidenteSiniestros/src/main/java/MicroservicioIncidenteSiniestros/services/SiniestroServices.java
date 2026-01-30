@@ -52,4 +52,25 @@ public class SiniestroServices {
     public void eliminarSiniestro(Integer idSin) {
         siniestroRepository.deleteById(idSin);
     }
+
+    // Metodo para ver cuanto siniestros ocurrieron el mes
+    public Long countByMonthAndYear(Integer month, Integer year) {
+        return siniestroRepository.countByMonthAndYear(month, year);
+    }
+
+    // Metodo para ver cuanto siniestros ocurrieron el año
+    public Long countByYear(Integer year) {
+        return siniestroRepository.countByYear(year);
+    }
+
+    // Metodo para ver la cantidad de polizas activadas de un siniestro
+    public Long countByPolizaId(Integer polizaId) {
+        return siniestroRepository.countByPolizaId(polizaId);
+    }
+
+    // Metodo para ver la cantidad de siniestros relacionado a un incidente
+    public Long countByIncidenteId(Integer incidenteId) {
+        return siniestroRepository.countByIncidenteId(incidenteId);
+    }
+
 }
